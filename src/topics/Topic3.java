@@ -13,7 +13,7 @@ public class Topic3 extends JFrame {
 
     public Topic3(String name) {
         this.name = name;
-        setTitle("Contenido - Topic 3");
+        setTitle("INTRODUCCION A LAS MAQUINA DE TURING");
         setSize(1050, 700);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -27,10 +27,13 @@ public class Topic3 extends JFrame {
         // Contenido en español
         htmlContentES = "<html><body style='text-align: center; color: white; font-family: Arial;' >"
                 + "<h1 style='color: gray;'>INTRODUCCION A LAS MAQUINA DE TURING</h1><br><br>"
+                
                 + "<img src='https://th.bing.com/th/id/OIP.BDs8D_Jtb7yKMAK86mKADgAAAA?rs=1&pid=ImgDetMain' alt='Placeholder Image'><br><br>"
+                
                 + "<p style='text-align:left; margin-left:100px;'>Las máquinas de Turing son un modelo matemático de una computadora abstracta Fueron inventadas por Alan Turing en 1936 <br> para estudiar la naturaleza de los cálculos computables "
                 + "<br><br><br></p>"
                 + "<h2 style='color:gray;'>¿QUE ES?</h2>"
+                
                 + "<p style='text-align:left; margin-left:100px;'>Es una abstracción matemática que representa un modelo teórico <br>"
                 + "de un dispositivo capaz de realizar cálculos"
                 + "siguiendo reglas específicas. La introducción de la máquina de Turing <br>"
@@ -40,42 +43,64 @@ public class Topic3 extends JFrame {
                 + "Este modelo está formado por un alfabeto de entrada y uno de salida, un símbolo especial llamado"
                 + "blanco un conjunto de estados finitos <br> y un conjunto de transiciones entre dichos estados. "
                 + "<br><br><br> </p>"
+                
                 + "<div style='text-align: left; margin-left:100px;'> "
                 + "<h2 style='color:gray;'>Componentes</h2>"
                 + "<ul style='margin-left: 20px;'>"
+                
                 + "<li>Una cinta infinita dividida en casillas y una cabeza lectora/escritora que se mueve <br> a lo largo de la cinta</li>"
+                
                 + "<li>La cinta contiene símbolos, y la cabeza puede leer y escribir símbolos en las casillas.</li>"
+                
                 + "<li>La máquina tiene un conjunto finito de estados internos y reglas de transición <br> que determinan su comportamiento.</li>"
+                
                 + "</ul>"
                 + "</div>"
+                
                 + "<div style='margin-left:-10px; padding:20px;'>"
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/404941852_281385274901849_1086748544672084846_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WRn318vJYrEAX_-By2C&_nc_ht=scontent.fbga3-1.fna&oh=00_AfDx5h8xqCSaD8NkXe0N9ll7iTeQITdEaqewQWcwoOWXVg&oe=6565BD2F' alt='Placeholder Image'><br><br>"
                 + "</div>"
+                
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'>"
                 + "<h2 style='color:gray;'>Puede definirse en una cinta como una 7-tupla Donde: "
                 + "</h2> <br>"
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405886584_281462008227509_9070894222190674188_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=moQV-X_HGNIAX-qeYaJ&_nc_ht=scontent.fbga3-1.fna&oh=00_AfCbpJ-BYfdSmz8hwvroGkyd6Ys8RgtxS__UtnafJX70ZQ&oe=65661F95' alt='Placeholder Image'><br><br>"
                 + "<ul style='margin-left: 20px;'>"
+               
                 + "<li> Q -> Es un conjunto finito de estados.</li>"
+                
                 + "<li> E -> Es un conjunto finito de símbolos distinto del espacio en blanco, denominado </li>"
+                
                 + "<li> Γ -> Es un conjunto finito de símbolos de cinta, denominado alfabeto de cinta (Σ⊆Γ) </li>"
+               
                 + "<li>	S E Q -> Es el estado inicial</li>"
+               
                 + "<li>	B E Γ -> Es un símbolo denominado blanco, y es el único símbolo que se puede repetir un número infinito de veces.</li>"
+               
                 + "<li>	F E Q es el conjunto de estados finales de aceptación.</li>"
+               
                 + "<li>	Q × Γ→ Q × Γ × {L,R} -> Es una función parcial denominada función de transición, donde L es un movimiento a la izquierda <br> y R es el movimiento a la derecha.</li>"
+               
                 + "</ul>"
                 + "</div>"
+                
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
                 + "<h2 style='color:gray;'>¿Cómo Funciona?</h2>"
-                + "<ol style='margin-left: 20px;'>"
+                + "<ol style='margin-left: 20px;'>"    
                 + "<li>La máquina comienza en un estado inicial y se coloca el cabezal lector/escritor en el primer cuadrado de la cinta.</li>"
+               
                 + "<li>La máquina lee el símbolo que se encuentra en el cuadrado en el que se encuentra el cabezal lector/escritor</li>"
+               
                 + "<li>La máquina utiliza la tabla de transición para determinar cuál debe ser su siguiente acción</li>"
+               
                 + "<li>La máquina realiza la acción especificada por la tabla de transición</li>"
+               
                 + "<li>El cabezal lector/escritor se mueve a la siguiente posición de la cinta</li>"
+               
                 + "<li>Los pasos 2 a 5 se repiten hasta que la máquina llegue a un estado final</li>"
                 + "</ol>"
                 + "</div>"
+                
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
                 + "<h2 style='color:gray;'>Ejemplo</h2>"
                 + "<p style='margin-left: 20px;'>"
@@ -84,19 +109,26 @@ public class Topic3 extends JFrame {
                 + "El estado inicial es q0. La tabla de transición de la máquina es la siguiente:"
                 + "<br></p>"
                 + "</div>"
+                
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405882392_281467738226936_2974071418843638468_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=NLoyQGH0TiAAX_cuYmx&_nc_ht=scontent.fbga3-1.fna&oh=00_AfBgk8KQnN4mxh8-SMwjTWjzeTb-voLtQMhZUh1kqOsAzA&oe=65658E4A' alt='Placeholder Image'><br><br>"
+                
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
                 + "<h2 style='color:gray;'>El funcionamiento de la máquina es el siguiente: </h2>"
                 + "<ul style='margin-left: 20px;'>"
                 + "<li>La máquina comienza en el estado q0 con el cabezal lector/escritor en la primera celda de la cinta.</li>"
+               
                 + "<li>La máquina lee el primer símbolo en la cinta. Si es un 0, la máquina escribe un 1 en la celda y pasa al estado q1.<br> Si es un 1, la máquina escribe un 1 en la celda y permanece en el estado q0.</li>"
+               
                 + "<li>La máquina repite los pasos 2 y 3 hasta que llega al final de la cinta</li>"
+              
                 + "<li>Si la máquina llega al final de la cinta y está en el estado q2, entonces la cinta contiene solo ceros. <br> La máquina escribe el número de ceros que contiene la cinta en la última celda y se detiene.</li>"
+               
                 + "</ul>"
                 + "<p style='margin-left: 20px;'>"
                 + "Por ejemplo, si la máquina se le da la cadena de entrada \"110110\", la máquina escribirá el número 4 en la última celda de la cinta. <br>"
                 + "<br></p>"
                 + "</div>"
+                
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
                 + "<h2 style='color:gray;'>Diagrama transición </h2>"
                 + "<p style='margin-left: 20px;'>"
@@ -104,12 +136,17 @@ public class Topic3 extends JFrame {
                 + "</p>"
                 + "<ul style='margin-left: 20px;'>"
                 + "<li>Estados: Los estados representan los diferentes estados en los que puede estar la máquina. Se representan como círculos</li>"
+               
                 + "<li>Transiciones: Las transiciones representan los cambios de estado que puede realizar la máquina. <br> Se representan como flechas que conectan los estados</li>"
+               
                 + "<li>Acciones: Las acciones son las operaciones que realiza la máquina en cada estado. Se representan como etiquetas en las flechas</li>"
+               
                 + "<li>Movimientos: Los movimientos son los movimientos que realiza el cabezal lector/escritor en la cinta. <br> Se representan como flechas en los estados.</li>"
                 + "</ul>"
                 + "</div>"
+                
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405855247_281472168226493_5783500389954792890_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_R9AAEvB5fYAX-qwOG9&_nc_ht=scontent.fbga3-1.fna&oh=00_AfDIEX6kuisbMreM10Uco3qh-BMMO0uK716XR-yxDAL2CQ&oe=6565AF79' alt='Placeholder Image'><br><br>"
+                
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
                 + "<h2 style='color:gray;'>Explicación del diagrama: </h2>"
                 + "<p style='margin-left: 20px;'>"
@@ -120,6 +157,7 @@ public class Topic3 extends JFrame {
                 + "<li>Las acciones se muestran como flechas que conectan los estados</li>"
                 + "</ul>"
                 + "</div>"
+                
                 + "<br><br></body></html>";
 
         // Contenido en inglés
@@ -215,11 +253,13 @@ public class Topic3 extends JFrame {
         JButton btnSpanish = new JButton("ES");
         btnSpanish.setBackground(new Color(44, 62, 80));
         btnSpanish.setForeground(new Color(171, 178, 185));
+        btnSpanish.setFont(new Font("Arial", Font.BOLD, 12));
         btnSpanish.setCursor(getCursor());
 
         JButton btnEnglish = new JButton("ENG");
         btnEnglish.setBackground(new Color(44, 62, 80));
         btnEnglish.setForeground(new Color(171, 178, 185));
+        btnEnglish.setFont(new Font("Arial", Font.BOLD, 12));
 
         // Listener para el botón en español
         btnSpanish.addActionListener(e -> {
@@ -234,10 +274,12 @@ public class Topic3 extends JFrame {
         JButton prev = new JButton("ANTERIOR");
         prev.setBackground(new Color(44, 62, 80));
         prev.setForeground(new Color(171, 178, 185));
+        prev.setFont(new Font("Arial", Font.BOLD, 12));
+        
         JButton next = new JButton("SIGUIENTE");
         next.setBackground(new Color(44, 62, 80));
         next.setForeground(new Color(171, 178, 185));
-
+        next.setFont(new Font("Arial", Font.BOLD, 12));
         // Listener para el botón anterior
         prev.addActionListener(e -> {
             setVisible(false);
@@ -254,15 +296,16 @@ public class Topic3 extends JFrame {
         JButton btnOpenMenu = menuButton.getButton();
         btnOpenMenu.setBackground(new Color(44, 62, 80));
         btnOpenMenu.setForeground(new Color(171, 178, 185));
+        btnOpenMenu.setFont(new Font("Arial", Font.BOLD, 12));
 
         //agregamos los botones al panel de botones
         JPanel btnPanel = new JPanel();
         btnPanel.setBackground(new Color(86, 101, 115));
-        btnPanel.add(btnOpenMenu);
         btnPanel.add(prev);
+        btnPanel.add(next);
+        btnPanel.add(btnOpenMenu);
         btnPanel.add(btnSpanish);
         btnPanel.add(btnEnglish);
-        btnPanel.add(next);
 
         JScrollPane scrollPane = new JScrollPane(contentPane);
         add(btnPanel, BorderLayout.NORTH);
@@ -271,7 +314,7 @@ public class Topic3 extends JFrame {
         setVisible(true);
     }
 
-    public static void main(String[] args) {
-        new Topic3("test");
-    }
+    // public static void main(String[] args) {
+    //     new Topic3("test");
+    // }
 }

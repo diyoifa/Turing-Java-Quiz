@@ -18,12 +18,14 @@ public class MenuButton {
         popupMenu = new JPopupMenu();
 
         // Crear los elementos del menú
-        JMenuItem itemA = new JMenuItem("Biografía de Turín");
-        JMenuItem itemB = new JMenuItem("Lenguajes reconocidos por las MT");
-        JMenuItem itemC = new JMenuItem("Introducción a las MT");
-        JMenuItem itemD = new JMenuItem("Lenguajes aceptados por las MT");
-        JMenuItem itemF = new JMenuItem("Extensiones de las MT básicas");
-        JMenuItem itemG = new JMenuItem("Algoritmos asociados a las MT");
+        JMenuItem itemA = new JMenuItem("1)Biografía de Turín");
+        JMenuItem itemB = new JMenuItem("2)Lenguajes reconocidos por las MT");
+        JMenuItem itemC = new JMenuItem("3)Introducción a las MT");
+        JMenuItem itemD = new JMenuItem("4)Lenguajes aceptados por las MT");
+        JMenuItem itemF = new JMenuItem("5)Extensiones de las MT básicas");
+        JMenuItem itemG = new JMenuItem("6)Algoritmos asociados a las MT");
+        JMenuItem itemH = new JMenuItem("7)Contexto");
+
 
         // Agregar los elementos al menú emergente
         popupMenu.add(itemA);
@@ -32,6 +34,8 @@ public class MenuButton {
         popupMenu.add(itemD);
         popupMenu.add(itemF);
         popupMenu.add(itemG);
+        popupMenu.add(itemH);
+
 
         // Configurar acciones para cada elemento del menú
         //Enlaces a otros items cuando se da click
@@ -90,6 +94,16 @@ public class MenuButton {
                 closeWindow(); // Llama al método para cerrar la ventana
 
                 new Topic6("love");
+            }
+        });
+        itemH.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Acción a realizar cuando se selecciona el itemA
+                System.out.println("Item A seleccionado");
+                // Agrega aquí el código que deseas ejecutar
+                closeWindow(); // Llama al método para cerrar la ventana
+
+                new Rules("love");
             }
         });
 
