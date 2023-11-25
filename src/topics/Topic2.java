@@ -2,6 +2,7 @@ package topics;
 
 import java.awt.*;
 import javax.swing.*;
+import quiz.application.MenuButton;
 
 public class Topic2 extends JFrame {
 
@@ -26,7 +27,7 @@ public class Topic2 extends JFrame {
         htmlContentES = "<html><body><h1>Conceptos del Topic 2 (ES)</h1><br><br>" +
                 "Aquí está la imagen: <img src='https://via.placeholder.com/150' alt='Placeholder Image'><br><br>" +
                 "<h2>Contenido de ejemplo para el Topic 2 (ES):</h2><br>" +
-                "<p>texto ficticio Topic 2 (ES):</p>" +
+                "<p>texto ficticio Topic 2 (ES):   </p>" +
                 "<ul>" +
                 "<li>Dato 1: Valor 1</li>" +
                 "<li>Dato 2: Valor 2</li>" +
@@ -79,8 +80,14 @@ public class Topic2 extends JFrame {
             setVisible(false);
             new Topic3(name);
         });
-
+        
+        //instanciamos el boton de abrir menu desde la clase MenuButton
+        MenuButton menuButton = new MenuButton(this);
+        JButton btnOpenMenu = menuButton.getButton(); 
+        
+        //agregamos los botones al panel de botones
         JPanel btnPanel = new JPanel();
+        btnPanel.add(btnOpenMenu);
         btnPanel.add(prev);       
         btnPanel.add(btnSpanish);
         btnPanel.add(btnEnglish);

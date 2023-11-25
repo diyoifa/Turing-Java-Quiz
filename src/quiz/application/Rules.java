@@ -3,6 +3,7 @@ package quiz.application;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import topics.Topic1;
 
 public class Rules extends JFrame implements ActionListener {
 
@@ -10,19 +11,19 @@ public class Rules extends JFrame implements ActionListener {
     JButton start, back;
     JTextArea rulesTextArea;
 
-    Rules(String name) {
+    public Rules(String name) {
         this.name = name;
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
         JLabel heading = new JLabel("Bienvenido " + name + " a Turin Quiz");
-        heading.setBounds(50, 20, 700, 30);
+        heading.setBounds(200, 20, 700, 30);
         heading.setFont(new Font("Arial", Font.BOLD, 28));
         heading.setForeground(new Color(30, 144, 254));
         add(heading);
 
         rulesTextArea = new JTextArea();
-        rulesTextArea.setBounds(20, 90, 700, 350);
+        rulesTextArea.setBounds(20, 90, 800, 500);
         rulesTextArea.setFont(new Font("Tahoma", Font.PLAIN, 16));
         rulesTextArea.setLineWrap(true);
         rulesTextArea.setWrapStyleWord(true);
@@ -37,10 +38,12 @@ public class Rules extends JFrame implements ActionListener {
                 + "6. Algoritmos asociados a las Máquinas de Turing\n\n"
                 + "Cada sección sobre las Máquinas de Turing proporcionará información relevante y comprensible para facilitar el aprendizaje y la exploración de este concepto fundamental en la teoría de la computación."
         );
-
-        JScrollPane scrollPane = new JScrollPane(rulesTextArea);
-        scrollPane.setBounds(90, 120, 750, 450);
-        add(scrollPane);
+        rulesTextArea.setEditable(false);
+        
+        add(rulesTextArea);
+        //JScrollPane scrollPane = new JScrollPane(rulesTextArea);
+        //scrollPane.setBounds(90, 120, 750, 450);
+        //add(scrollPane);
 
         back = new JButton("Back");
         back.setBounds(300, 600, 100, 30);
@@ -65,16 +68,15 @@ public class Rules extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == start) {
             setVisible(false);
-            //new Quiz(name);
-            new Menu(name);
-
+            //new Menu();
+            new Topic1(name);
         } else {
             setVisible(false);
             new Login();
         }
     }
 
-    public static void main(String[] args) {
-        new Rules("User");
-    }
+    //public static void main(String[] args) {
+      //  new Rules("User");
+    //}
 }

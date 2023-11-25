@@ -2,6 +2,7 @@ package topics;
 
 import java.awt.*;
 import javax.swing.*;
+import quiz.application.MenuButton;
 
 
 public class Topic6 extends JFrame {
@@ -82,7 +83,13 @@ public class Topic6 extends JFrame {
           
         });
 
+        //instanciamos el boton de abrir menu desde la clase MenuButton
+        MenuButton menuButton = new MenuButton(this);
+        JButton btnOpenMenu = menuButton.getButton(); 
+        
+        //agregamos los botones al panel de botones
         JPanel btnPanel = new JPanel();
+        btnPanel.add(btnOpenMenu);
         btnPanel.add(prev);       
         btnPanel.add(btnSpanish);
         btnPanel.add(btnEnglish);
