@@ -50,11 +50,19 @@ Cada sección sobre las Máquinas de Turing proporcionará información relevant
 ![Alt text](image.png)
 
 
-# Pantalla de contexto 
+# Pantalla de Contexto 
 ![Alt text](image-1.png)
 
 # Pantallad de Menu
 ![Alt text](image-2.png)
 
-# Mockup de la pantalla del topic
+# Pantalla del topic
 ![Alt text](image-3.png)
+
+# Pantalla de QUIZ
+![Alt text](image-4.png)
+
+# Pantalla de Puntuacion y Despedida
+![Alt text](image-5.png)
+
+

@@ -21,13 +21,13 @@ public class Topic1 extends JFrame {
         // Crear un JTextPane en lugar de un JTextArea
         contentPane = new JTextPane();
         contentPane.setContentType("text/html");
-        contentPane.setBackground(new Color(44, 62, 80));
+        contentPane.setBackground(new Color(234, 254, 255));
         contentPane.setEditable(false);
 
         // Contenido en español
-        htmlContentES = "<html><body style='text-align: center; color: white; font-family: Arial;' >"
+        htmlContentES = "<html><body style='text-align: center; color: black; font-family: Arial;' >"
 
-                + "<h1 style='color: gray;'>BIOGRAFIA DE ALAN TURING</h1><br><br>"
+                + "<h1 style='color: #5B74C3;'>BIOGRAFIA DE ALAN TURING</h1><br><br>"
 
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405654731_281713151535728_8275004349497538077_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tYgTMtgogxwAX8yWbcL&_nc_oc=AQnJpsPamEOrrp07bcPIolWqCgfwvJLvEBRGddFoi7ELsZr5MD-8xPgEhPH2PsqOeTI&_nc_ht=scontent.fbga3-1.fna&oh=00_AfAoCHwfIh_3ajSX3ThTO_YvhuzHmguC_8QWLswt8CmUbA&oe=6567CE82' alt='Placeholder Image'><br><br>"
 
@@ -46,7 +46,7 @@ public class Topic1 extends JFrame {
                 + "<br><br></p>"
 
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
-                + "<h2 style='color:gray;'>Ejecución</h2>"
+                + "<h2 style='color: #5B74C3;'>Ejecución</h2>"
                 + "<ol style='margin-left: 20px;'>"
                 + "<li>La MT-ND comienza en un estado inicial q0.</li>"
                 + "<li>La MT-ND lee el símbolo actual de la cinta.</li>"
@@ -63,7 +63,7 @@ public class Topic1 extends JFrame {
                 + "<br><br><br></p>"
 
                 + "<div style='text-align: left; margin-left:100px;'> "
-                + "<h2 style='color:gray;'>Características:"
+                + "<h2 style='color: #5B74C3;'>Características:"
                 + "</h2>"
                 + "<ul style='margin-left: 20px;'>"
                 + "<li><b>Cinta Infinita: </b> A diferencia de las Máquinas de Turing estándar, que tienen una cinta finita, las <br>  "
@@ -75,7 +75,7 @@ public class Topic1 extends JFrame {
                 + "</ul>"
                 + "</div>"
 
-                + "<h2 style='color:gray; text-align:center'>"
+                + "<h2 style='color: #5B74C3; text-align:center'>"
                 + "Las extensiones de las máquinas de Turing básicas han permitido modelar una amplia gama de <br>"
                 + "sistemas reales, incluidos:"
                 + "</h2> <br>"
@@ -86,25 +86,41 @@ public class Topic1 extends JFrame {
                 + "<li>"
                 + "<p><b>Computadoras:</b> Las máquinas de Turing básicas se utilizan para modelar el funcionamiento interno  <br>"
                 + "de las computadoras.: <br><br></p>"
-                + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405554473_281721568201553_4190671734879336388_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rqoDg5OSrFYAX_y2z9w&_nc_ht=scontent.fbga3-1.fna&oh=00_AfD01m-suNlxjT6kLOT31la43JbxoBRbz2ne2dF7VrjXsw&oe=65667088'><br><br><br><br>"
+
+                + "<div style='margin-left:100px;'>"
+                + " <img  src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405554473_281721568201553_4190671734879336388_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rqoDg5OSrFYAX_y2z9w&_nc_ht=scontent.fbga3-1.fna&oh=00_AfD01m-suNlxjT6kLOT31la43JbxoBRbz2ne2dF7VrjXsw&oe=65667088'><br><br><br><br>"
+                + "</div>"
+
                 + "</li>"
 
                 + "<br><li>"
                 + "<p><b>Lógica:</b> Las máquinas de Turing se utilizan para estudiar la lógica formal.<br>"
                 + "<br></p>"
+
+                + "<div style='margin-left:100px;'>"
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405553615_281722054868171_209498988647614606_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=n5ariE2o2lYAX-9AiQv&_nc_ht=scontent.fbga3-1.fna&oh=00_AfAdpUG7_YU-o3lF1XJl2EVBpvVy-_LAqdERUDb58sfUmw&oe=65676ABD'><br><br><br><br>"
+                + "</div>"
+
                 + "</li>"
 
                 + "<li>"
                 + "<p><b>Matemáticas:</b> Las máquinas de Turing se utilizan para estudiar los fundamentos de las matemáticas.<br>"
                 + "<br></p>"
+                
+                + "<div style='margin-left:100px;'>"
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405582692_281722838201426_1563785501134258681_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=z3EsZ7JkftYAX_tZL_u&_nc_ht=scontent.fbga3-1.fna&oh=00_AfASf_DOuJrMpykNOfhVyhBXTW2qW9ykHC_PtfeN3vP3Cg&oe=65664AA3'><br><br><br><br>"
+                + "</div>"
+
                 + "</li>"
 
                 + "<li>"
                 + "<p><b>Ciencia de la computación:</b> Las máquinas de Turing se utilizan para estudiar la teoría de la computación.<br>"
                 + "<br></p>"
+
+                + "<div style='margin-left:100px;'>"
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405598730_281723171534726_6799405737082640228_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Wg9nxt2F6LoAX-QS2oH&_nc_ht=scontent.fbga3-1.fna&oh=00_AfCruFOAar4gtIHsJHugwiiEFG0GfxLYZlCkBTQJvU0Nig&oe=65671FC6'>"
+                + "</div>"
+
                 + "<br><br><br></li>"
 
                 + "</ol>"
@@ -113,8 +129,8 @@ public class Topic1 extends JFrame {
                 + "<br><br></body></html>";
 
         // Contenido en inglés
-        htmlContentENG = "<html><body style='text-align: center; color: white; font-family: Arial;' >"
-                + "<h1 style='color: gray;'>EXTENSIONS OF BASIC TURING MACHINES</h1><br><br>"
+        htmlContentENG = "<html><body style='text-align: center; color: black; font-family: Arial;' >"
+                + "<h1 style='color: #5B74C3;'>EXTENSIONS OF BASIC TURING MACHINES</h1><br><br>"
 
                 + "<img src='https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/405654731_281713151535728_8275004349497538077_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tYgTMtgogxwAX8yWbcL&_nc_oc=AQnJpsPamEOrrp07bcPIolWqCgfwvJLvEBRGddFoi7ELsZr5MD-8xPgEhPH2PsqOeTI&_nc_ht=scontent.fbga3-1.fna&oh=00_AfAoCHwfIh_3ajSX3ThTO_YvhuzHmguC_8QWLswt8CmUbA&oe=6567CE82' alt='Placeholder Image'><br><br>"
 
@@ -129,7 +145,7 @@ public class Topic1 extends JFrame {
                 + "<br><br></p>"
 
                 + "<div style='text-align: left; margin-left:100px; padding:20px;'> "
-                + "<h2 style='color:gray;'>Execution</h2>"
+                + "<h2 style='color: #5B74C3;'>Execution</h2>"
                 + "<ol style='margin-left: 20px;'>"
                 + "<li>The NTM starts in an initial state q0.</li>"
                 + "<li>The NTM reads the current symbol from the tape.</li>"
@@ -144,7 +160,7 @@ public class Topic1 extends JFrame {
                 + "<br><br><br></p>"
 
                 + "<div style='text-align: left; margin-left:100px;'> "
-                + "<h2 style='color:gray;'>Characteristics:"
+                + "<h2 style='color: #5B74C3;'>Characteristics:"
                 + "</h2>"
                 + "<ul style='margin-left: 20px;'>"
                 + "<li><b>Infinite Tape:</b> Unlike standard Turing Machines that have a finite tape, Turing Machines with an infinite tape have a tape that extends infinitely in both directions."
@@ -154,7 +170,7 @@ public class Topic1 extends JFrame {
                 + "</ul>"
                 + "</div>"
 
-                + "<h2 style='color:gray; text-align:center'>"
+                + "<h2 style='color: #5B74C3; text-align:center'>"
                 + "Extensions of basic Turing machines have allowed modeling a wide range of real systems, including:"
                 + "</h2> <br>"
 
@@ -194,14 +210,14 @@ public class Topic1 extends JFrame {
 
         // Botones para cambiar el idioma
         JButton btnSpanish = new JButton("ES");
-        btnSpanish.setBackground(new Color(44, 62, 80));
-        btnSpanish.setForeground(new Color(171, 178, 185));
+        btnSpanish.setBackground(Color.WHITE);
+        btnSpanish.setForeground(new Color(34, 153, 255));
         btnSpanish.setFont(new Font("Arial", Font.BOLD, 12));
         btnSpanish.setCursor(getCursor());
 
         JButton btnEnglish = new JButton("ENG");
-        btnEnglish.setBackground(new Color(44, 62, 80));
-        btnEnglish.setForeground(new Color(171, 178, 185));
+        btnEnglish.setBackground(Color.WHITE);
+        btnEnglish.setForeground(new Color(34, 153, 255));
         btnEnglish.setFont(new Font("Arial", Font.BOLD, 12));
 
         // Listener para el botón en español
@@ -213,15 +229,15 @@ public class Topic1 extends JFrame {
         btnEnglish.addActionListener(e -> {
             contentPane.setText(htmlContentENG);
         });
-
+        // boton para atras
         JButton prev = new JButton("ANTERIOR");
-        prev.setBackground(new Color(44, 62, 80));
-        prev.setForeground(new Color(171, 178, 185));
+        prev.setBackground(Color.WHITE);
+        prev.setForeground(new Color(34, 153, 255));
         prev.setFont(new Font("Arial", Font.BOLD, 12));
-
+        // boton siguente
         JButton next = new JButton("SIGUIENTE");
-        next.setBackground(new Color(44, 62, 80));
-        next.setForeground(new Color(171, 178, 185));
+        next.setBackground(Color.WHITE);
+        next.setForeground(new Color(34, 153, 255));
         next.setFont(new Font("Arial", Font.BOLD, 12));
 
         // cuando de click en anterior abrir el tema 4
@@ -237,20 +253,31 @@ public class Topic1 extends JFrame {
         });
 
         // instanciamos el boton de abrir menu desde la clase MenuButton
-        MenuButton menuButton = new MenuButton(this);
+        MenuButton menuButton = new MenuButton(this, name);
         JButton btnOpenMenu = menuButton.getButton();
-        btnOpenMenu.setBackground(new Color(44, 62, 80));
-        btnOpenMenu.setForeground(new Color(171, 178, 185));
+        btnOpenMenu.setBackground(Color.WHITE);
+        btnOpenMenu.setForeground(new Color(34, 153, 255));
         btnOpenMenu.setFont(new Font("Arial", Font.BOLD, 12));
 
         // agregamos los botones al panel de botones
         JPanel btnPanel = new JPanel();
-        btnPanel.setBackground(new Color(86, 101, 115));
+        btnPanel.setBackground(new Color(34, 153, 255));
         btnPanel.add(prev);
         btnPanel.add(next);
         btnPanel.add(btnOpenMenu);
         btnPanel.add(btnSpanish);
         btnPanel.add(btnEnglish);
+
+        // Cargar la imagen desde el archivo en el proyecto
+        // ImageIcon backgroundImage = new
+        // ImageIcon(getClass().getResource("/icons/bg-nav.jpg"));
+        // System.out.println("backgroundImage = " + backgroundImage);
+        // JLabel backgroundLabel = new JLabel(backgroundImage);
+        // backgroundLabel.setLayout(new BorderLayout());
+
+        // Añadir el panel de botones al label de fondo
+        // backgroundLabel.add(btnPanel, BorderLayout.CENTER);
+        // add(backgroundLabel);
 
         JScrollPane scrollPane = new JScrollPane(contentPane);
         add(btnPanel, BorderLayout.NORTH);
@@ -259,7 +286,7 @@ public class Topic1 extends JFrame {
         setVisible(true);
     }
 
-    // public static void main(String[] args) {
-    //     new Topic1("test");
-    // }
+    //public static void main(String[] args) {
+      //  new Topic1("test");
+    //}
 }

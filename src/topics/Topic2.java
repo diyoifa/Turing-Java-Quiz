@@ -237,7 +237,7 @@ public class Topic2 extends JFrame {
         });
 
         // instanciamos el boton de abrir menu desde la clase MenuButton
-        MenuButton menuButton = new MenuButton(this);
+        MenuButton menuButton = new MenuButton(this, name);
         JButton btnOpenMenu = menuButton.getButton();
         btnOpenMenu.setBackground(new Color(44, 62, 80));
         btnOpenMenu.setForeground(new Color(171, 178, 185));
